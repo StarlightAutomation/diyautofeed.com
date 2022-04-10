@@ -1,0 +1,11 @@
+- title: Control Panel
+  images:
+    - link: /assets/images/control-panel-dashboard.png
+      alt: Control Panel Dashboard
+      description: The dashboard provides easy management of your schedules and devices.
+    - link: /assets/images/control-panel-gpio.png
+      alt: GPIO Configuration
+      description: Control over GPIO pin configuration
+    - link: /assets/images/control-panel-mqtt.png
+      alt: HomeAssistant Integration
+      description: HomeAssistant auto-discovery with MQTT

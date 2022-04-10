@@ -1,0 +1,13 @@
+- name: Software Documentation
+  link: /software-docs/
+  dropdown:
+    - name: Installation
+      link: /software-docs/installation
+    - name: Upgrading
+      link: /software-docs/upgrading
+    - name: FAQ
+      link: /software-docs/faq
+
+- name: Reservoir Builds
+  link: /reservoirs/
+  dropdown:

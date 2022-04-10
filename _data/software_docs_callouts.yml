@@ -1,0 +1,21 @@
+style: is-light
+height: is-medium
+items:
+  - title: Installation
+    icon: fa-download
+    description: >
+      &nbsp;
+    call_to_action_name: Installation Docs
+    call_to_action_link: /software-docs/installation
+  - title: Upgrading
+    icon: fa-retweet
+    description: >
+      &nbsp;
+    call_to_action_name: Upgrade Docs
+    call_to_action_link: /software-docs/upgrading
+  - title: Frequently Asked questions
+    icon: fa-info
+    description: >
+      &nbsp;
+    call_to_action_name: View FAQ
+    call_to_action_link: /software-docs/faq
