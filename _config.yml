@@ -23,12 +23,12 @@ email: nick@epautomotive.org
 description: >- # this means to ignore newlines until "baseurl:"
   The DIYAutoFeed website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://diyautofeed.com" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  StarlightAutomation
 
 # Build settings
-theme: minima
+theme: bulma-clean-theme
 plugins:
   - jekyll-feed
 
