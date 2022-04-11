@@ -7,11 +7,11 @@ permalink: /software-docs/faq
 
 ### Where is the dashboard?
 
-`http://<hostname-or-ip>:3000`, where `hostname-or-ip` is the hostname or IP address of your host device. This can be [set during installation](/software-docs/installing#flashing-os-image-using-raspberry-pi-imager), and the IP assignment can be found in most router dashboards.
+`http://<hostname-or-ip>:3000`, where `hostname-or-ip` is the hostname or IP address of your host device. This can be [set during installation](/software-docs/installation#flashing-os-image-using-raspberry-pi-imager), and the IP assignment can be found in most router dashboards.
 
 ### My schedules are in the wrong timezone
 
-You should set your host timezone during installation. You can SSH into your host and edit/create the file `/etc/timezone`, where you may specify the timezone. After this you should [run a container update](/software-docs/updating).
+You should set your host timezone during installation. You can SSH into your host and edit/create the file `/etc/timezone`, where you may specify the timezone. After this you should [run a container update](/software-docs/upgrading).
 
 ### My schedules aren't running at the right time
 
@@ -19,7 +19,7 @@ Is it possible they're [in the wrong timezone](#my-schedules-are-in-the-wrong-ti
 
 ### The app isn't running
 
-Check out the [Troubleshooting](/software-docs/installing#troubleshooting) section of the installation docs.
+Check out the [Troubleshooting](/software-docs/installation#troubleshooting) section of the installation docs.
 
 ### What is the minimum disk space requirement?
 
@@ -34,7 +34,7 @@ docker image prune
 
 ### Can I use multiple reservoirs with this software?
 
-Yes and no. A single device (such as a raspberry pi) running this software can control **one single reservoir**. However, you can run multiple devices with multiple reservoirs. To avoid hostname collision, be sure to specify different hostnames per device when [flashing the OS image](https://github.com/StarlightAutomation/autofeed-backend/wiki/Installing#flashing-os-image-using-raspberry-pi-imager).
+Yes and no. A single device (such as a raspberry pi) running this software can control **one single reservoir**. However, you can run multiple devices with multiple reservoirs. To avoid hostname collision, be sure to specify different hostnames per device when [flashing the OS image](/software-docs/installation#flashing-os-image-using-raspberry-pi-imager).
 
 ### How do I restart the application(s)?
 
@@ -45,4 +45,4 @@ There are a few ways to "reboot" the app:
 
 ### How do I update the application(s)?
 
-Check out the [Uppdating](/software-docs/updating) documentation.
+Check out the [Uppdating](/software-docs/upgrading) documentation.
