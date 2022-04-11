@@ -2,6 +2,7 @@
 layout: page
 title: AutoFeed Commander
 subtitle: Control multiple instances with one panel
+permalink: /software-docs/commander
 callouts: autofeed_commander_callouts
 gallery: autofeed_commander_gallery
 ---
