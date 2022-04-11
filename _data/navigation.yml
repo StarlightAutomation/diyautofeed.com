@@ -7,6 +7,8 @@
       link: /software-docs/upgrading
     - name: FAQ
       link: /software-docs/faq
+    - name: AutoFeed Commander
+      link: /software-docs/commander
 
 - name: Reservoir Builds
   link: /reservoirs/

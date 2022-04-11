@@ -1,0 +1,10 @@
+style: is-light
+height: is-medium
+items:
+  - title: Github
+    icon: fa-github
+    icon_brand: true
+    description: >
+      View the AutoFeed Commander project on Github
+    call_to_action_name: View on Github
+    call_to_action_link: https://github.com/StarlightAutomation/autofeed-commander

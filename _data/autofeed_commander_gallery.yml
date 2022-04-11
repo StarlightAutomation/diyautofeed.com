@@ -1,0 +1,11 @@
+- title: Screenshots
+  images:
+    - link: https://raw.githubusercontent.com/StarlightAutomation/autofeed-commander/HEAD/.github/screenshot-dashboard.png
+      alt: Dashboard
+      description: The dashboard shows an overview of all of your instances
+    - link: https://raw.githubusercontent.com/StarlightAutomation/autofeed-commander/HEAD/.github/screenshot-add-instance.png
+      alt: Add Instance
+      description: Easily add a new instance
+    - link: https://raw.githubusercontent.com/StarlightAutomation/autofeed-commander/HEAD/.github/screenshot-instance.png
+      alt: Instance Management
+      description: Use a familiar interface from within the commander application
