@@ -1,0 +1,9 @@
+style: is-light
+height: is-medium
+items:
+  - title: Temperature and Humidity
+    icon: fa-thermometer-quarter
+    description: >
+      Devices for monitoring temperature and humidity
+    call_to_action_name: View Devices
+    call_to_action_link: /misc-automation/temp-humidity/
