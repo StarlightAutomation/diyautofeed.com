@@ -26,11 +26,11 @@ The result is a combination of NodeMCU/ESP8266, a DHT22 sensor, ESPHome, and a s
 
 **Total Cost:** ~$11 per sensor (not including initial purchase of 3D printer or PLA)
 
-[STL Download](/assets/deltav1/delta-dht-v1.stl)
+[STL Download](/assets/stl/deltav1/delta-dht-v1.stl)
 
-![STL Screenshot 1](/assets/deltav1/stl-screenshot-1.png)
-![STL Screenshot 2](/assets/deltav1/stl-screenshot-2.png)
-![STL Screenshot 3](/assets/deltav1/stl-screenshot-3.png)
+![STL Screenshot 1](/assets/images/deltav1/stl-screenshot-1.png)
+![STL Screenshot 2](/assets/images/deltav1/stl-screenshot-2.png)
+![STL Screenshot 3](/assets/images/deltav1/stl-screenshot-3.png)
 
 
 ## ESPHome YAML
