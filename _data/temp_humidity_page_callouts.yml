@@ -1,0 +1,8 @@
+style: is-light
+height: is-medium
+items:
+  - title: Delta V1
+    description: >
+      A simple temperature/humidity multi-sensor built with NodeMCU, DHT22, and ESPHome.
+    call_to_action_name: Documentation
+    call_to_action_link: /misc-automation/temp-humidity/deltav1

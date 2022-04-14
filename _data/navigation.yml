@@ -13,3 +13,9 @@
 - name: Reservoir Builds
   link: /reservoirs/
   dropdown:
+
+- name: Other Automation
+  link: /misc-automation/
+  dropdown:
+    - name: Temperature/Humidity
+      link: /misc-automation/temp-humidity
