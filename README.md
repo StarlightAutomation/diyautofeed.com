@@ -1,4 +1,4 @@
-[# DIYAutofeed
+# DIYAutofeed
 
 ![DIYAutofeed Logo](./assets/images/logo.png)
 
