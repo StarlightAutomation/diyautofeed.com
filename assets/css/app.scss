@@ -3,3 +3,44 @@
 $primary: #0284c7;
 // Import Main CSS file from theme
 @import "main";
+
+.navbar-brand>a.navbar-item {
+  content: url('/assets/images/logo.png');
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  top: 0;
+}
+.navbar-brand>a.navbar-item:hover {
+  background-color: transparent !important;
+}
+
+.navbar.is-primary {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.navbar-start>.navbar-item, .navbar-link {
+  color: #000 !important;
+}
+.navbar-start>.navbar-item:hover, .navbar-link:hover {
+  color: #fff !important;
+}
+
+.navbar-end>a.navbar-item {
+  color: #000 !important;
+}
+.navbar-end>a.navbar-item:hover {
+  color: #fff !important;
+}
+
+.navbar-item.has-dropdown>a.navbar-link::after {
+  border-color: #000 !important;
+}
+.navbar-item.has-dropdown>a.navbar-link:hover::after {
+  border-color: #fff !important;
+}
+
+.navbar-item.is-active, .navbar-link.is-active {
+  background-color: #0284c7;
+  color: #fff !important;
+}
