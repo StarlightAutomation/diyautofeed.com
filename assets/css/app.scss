@@ -4,6 +4,10 @@ $primary: #0284c7;
 // Import Main CSS file from theme
 @import "main";
 
+.navbar.is-primary .navbar-burger {
+  color: #3c3c3c;
+}
+
 .navbar-brand>a.navbar-item {
   content: url('/assets/images/logo.png');
   display: inline-block;
