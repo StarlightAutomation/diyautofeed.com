@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DIYAutoFeed | The DIYAutoFeed website</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="DIYAutoFeed" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The DIYAutoFeed website" />
+<meta property="og:description" content="The DIYAutoFeed website" />
+<link rel="canonical" href="https://diyautofeed.com/" />
+<meta property="og:url" content="https://diyautofeed.com/" />
+<meta property="og:site_name" content="DIYAutoFeed" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="DIYAutoFeed" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"The DIYAutoFeed website","headline":"DIYAutoFeed","name":"DIYAutoFeed","url":"https://diyautofeed.com/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1W3HNYYLN"></script>
+<script>
+  window['ga-disable-G-Y1W3HNYYLN'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y1W3HNYYLN');
+</script><!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                DIYAutoFeed
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item is-active">Home</a>
+                
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/software-docs/" class="navbar-link ">Software Documentation</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/software-docs/installation" class="navbar-item ">Installation</a>
+                            
+                            <a href="/software-docs/upgrading" class="navbar-item ">Upgrading</a>
+                            
+                            <a href="/software-docs/faq" class="navbar-item ">FAQ</a>
+                            
+                            <a href="/software-docs/commander" class="navbar-item ">AutoFeed Commander</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/reservoirs/" class="navbar-item ">Reservoir Builds</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/misc-automation/" class="navbar-link ">Other Automation</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/misc-automation/temp-humidity" class="navbar-item ">Temperature/Humidity</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                <a class="navbar-item" href="https://github.com/sponsors/StarlightAutomation">
+                    <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
+                    <span>Sponsor</span>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">DIYAutoFeed</h1>
+            <p class="subtitle is-3">Open-Source automatic watering systems for indoor gardens</p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+    
+    
+    <div class="columns is-multiline">
+        <div class="column is-12">
+            <p class="title is-3 has-text-centered">Control Panel</p>
+        </div>
+        
+        <div class="column is-4-desktop is-6-tablet">
+            <div class="card">
+                <div class="card-image">
+                    <div x-data="{ open: false }" markdown="0">
+    <a x-on:click="open = true" title="View large image">
+        <figure class="image ">
+            <img src="https://diyautofeed.com/assets/images/control-panel-dashboard.png" alt="Control Panel Dashboard">
+        </figure>
+    </a>
+    <div class="modal" x-bind:class="open ? 'is-active' : ''" x-cloak>
+        <div class="modal-background" x-on:click="open = false"></div>
+        <div class="modal-content">
+            
+                <img src="https://diyautofeed.com/assets/images/control-panel-dashboard.png" alt="Control Panel Dashboard">
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+    </div>
+</div>
+
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>The dashboard provides easy management of your schedules and devices.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="column is-4-desktop is-6-tablet">
+            <div class="card">
+                <div class="card-image">
+                    <div x-data="{ open: false }" markdown="0">
+    <a x-on:click="open = true" title="View large image">
+        <figure class="image ">
+            <img src="https://diyautofeed.com/assets/images/control-panel-gpio.png" alt="GPIO Configuration">
+        </figure>
+    </a>
+    <div class="modal" x-bind:class="open ? 'is-active' : ''" x-cloak>
+        <div class="modal-background" x-on:click="open = false"></div>
+        <div class="modal-content">
+            
+                <img src="https://diyautofeed.com/assets/images/control-panel-gpio.png" alt="GPIO Configuration">
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+    </div>
+</div>
+
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>Control over GPIO pin configuration</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="column is-4-desktop is-6-tablet">
+            <div class="card">
+                <div class="card-image">
+                    <div x-data="{ open: false }" markdown="0">
+    <a x-on:click="open = true" title="View large image">
+        <figure class="image ">
+            <img src="https://diyautofeed.com/assets/images/control-panel-mqtt.png" alt="HomeAssistant Integration">
+        </figure>
+    </a>
+    <div class="modal" x-bind:class="open ? 'is-active' : ''" x-cloak>
+        <div class="modal-background" x-on:click="open = false"></div>
+        <div class="modal-content">
+            
+                <img src="https://diyautofeed.com/assets/images/control-panel-mqtt.png" alt="HomeAssistant Integration">
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" x-on:click="open = false"></button>
+    </div>
+</div>
+
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>HomeAssistant auto-discovery with MQTT</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+                    
+<div class="content">
+    
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

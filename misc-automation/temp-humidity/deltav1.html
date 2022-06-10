@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Delta V1 | DIYAutoFeed</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Delta V1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The DIYAutoFeed website" />
+<meta property="og:description" content="The DIYAutoFeed website" />
+<link rel="canonical" href="https://diyautofeed.com/misc-automation/temp-humidity/deltav1" />
+<meta property="og:url" content="https://diyautofeed.com/misc-automation/temp-humidity/deltav1" />
+<meta property="og:site_name" content="DIYAutoFeed" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Delta V1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The DIYAutoFeed website","headline":"Delta V1","url":"https://diyautofeed.com/misc-automation/temp-humidity/deltav1"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1W3HNYYLN"></script>
+<script>
+  window['ga-disable-G-Y1W3HNYYLN'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y1W3HNYYLN');
+</script><!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                DIYAutoFeed
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/software-docs/" class="navbar-link ">Software Documentation</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/software-docs/installation" class="navbar-item ">Installation</a>
+                            
+                            <a href="/software-docs/upgrading" class="navbar-item ">Upgrading</a>
+                            
+                            <a href="/software-docs/faq" class="navbar-item ">FAQ</a>
+                            
+                            <a href="/software-docs/commander" class="navbar-item ">AutoFeed Commander</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/reservoirs/" class="navbar-item ">Reservoir Builds</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/misc-automation/" class="navbar-link is-active">Other Automation</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/misc-automation/temp-humidity" class="navbar-item ">Temperature/Humidity</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+                <a class="navbar-item" href="https://github.com/sponsors/StarlightAutomation">
+                    <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
+                    <span>Sponsor</span>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Delta V1</h1>
+            <p class="subtitle is-3">Temperature/Humidity Sensor</p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    
+<div class="content">
+    <h3 id="about">About</h3>
+
+<p>A simple temperature/humidity multi-sensor built with NodeMCU, DHT22, and ESPHome.</p>
+
+<p>The Delta temperature/humidity sensor project is designed to provide a very lightweight, reliable, and replaceable
+multi-sensor that integrates seamlessly with Home Assistant.</p>
+
+<p>The result is a combination of NodeMCU/ESP8266, a DHT22 sensor, ESPHome, and a simple enclosure design available in
+.STL format.</p>
+
+<hr />
+
+<h2 id="materials">Materials</h2>
+
+<ul>
+  <li><a href="https://www.amazon.com/HiLetgo-Internet-Development-Wireless-Micropython/dp/B081CSJV2V/">NodeMCU ESP8266 Development Board</a></li>
+  <li><a href="https://www.amazon.com/Gowoops-Temperature-Humidity-Measurement-Raspberry/dp/B073F472JL/">DHT22/AM2302 Sensor</a></li>
+  <li>Access to a 3D printer</li>
+  <li>Home Assistant and <a href="https://esphome.io/">ESPHome</a></li>
+</ul>
+
+<p><strong>Total Cost:</strong> ~$11 per sensor (not including initial purchase of 3D printer or PLA)</p>
+
+<p><a href="/assets/stl/deltav1/delta-dht-v1.stl">STL Download</a></p>
+
+<p><img src="/assets/images/deltav1/stl-screenshot-1.png" alt="STL Screenshot 1" />
+<img src="/assets/images/deltav1/stl-screenshot-2.png" alt="STL Screenshot 2" />
+<img src="/assets/images/deltav1/stl-screenshot-3.png" alt="STL Screenshot 3" /></p>
+
+<h2 id="esphome-yaml">ESPHome YAML</h2>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">esphome</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Delta-DHT22</span>
+
+<span class="na">esp8266</span><span class="pi">:</span>
+  <span class="na">board</span><span class="pi">:</span> <span class="s">nodemcuv2</span>
+
+<span class="c1"># Enable logging</span>
+<span class="na">logger</span><span class="pi">:</span>
+
+<span class="c1"># Enable Home Assistant API</span>
+<span class="na">api</span><span class="pi">:</span>
+
+<span class="na">ota</span><span class="pi">:</span>
+  <span class="na">password</span><span class="pi">:</span> <span class="kt">!secret</span> <span class="s">ota_password</span>
+
+<span class="na">wifi</span><span class="pi">:</span>
+  <span class="na">ssid</span><span class="pi">:</span> <span class="kt">!secret</span> <span class="s">wifi_ssid</span>
+  <span class="na">password</span><span class="pi">:</span> <span class="kt">!secret</span> <span class="s">wifi_password</span>
+
+  <span class="c1"># Enable fallback hotspot (captive portal) in case wifi connection fails</span>
+  <span class="na">ap</span><span class="pi">:</span>
+    <span class="na">ssid</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Fallback</span><span class="nv"> </span><span class="s">Hotspot"</span>
+    <span class="na">password</span><span class="pi">:</span> <span class="kt">!secret</span> <span class="s">wifi_password</span>
+
+<span class="na">captive_portal</span><span class="pi">:</span>
+
+<span class="na">sensor</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">platform</span><span class="pi">:</span> <span class="s">dht</span>
+    <span class="na">model</span><span class="pi">:</span> <span class="s">AM2302</span>
+    <span class="na">pin</span><span class="pi">:</span> <span class="s">D2</span>
+    <span class="na">temperature</span><span class="pi">:</span>
+      <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Delta</span><span class="nv"> </span><span class="s">DHT</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Temperature"</span>
+      <span class="na">accuracy_decimals</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">unit_of_measurement</span><span class="pi">:</span> <span class="s2">"</span><span class="s">°F"</span>
+      <span class="na">device_class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">temperature"</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mdi:thermometer"</span>
+    <span class="na">humidity</span><span class="pi">:</span>
+      <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Delta</span><span class="nv"> </span><span class="s">DHT</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">Humidity"</span>
+      <span class="na">accuracy_decimals</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">unit_of_measurement</span><span class="pi">:</span> <span class="s2">"</span><span class="s">%"</span>
+      <span class="na">device_class</span><span class="pi">:</span> <span class="s2">"</span><span class="s">humidity"</span>
+      <span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mdi:water-percent"</span>
+    <span class="na">update_interval</span><span class="pi">:</span> <span class="s">15s</span>
+</code></pre></div></div>
+
+<p>Alright let’s define some things here:</p>
+
+<h4 id="esphomename"><code class="language-plaintext highlighter-rouge">esphome.name</code></h4>
+<p>The <code class="language-plaintext highlighter-rouge">name</code> field under <code class="language-plaintext highlighter-rouge">esphome</code> is simply the device name of your sensor. This should be unique to your ESPHome installation,
+since this name is used as the hostname for the device.</p>
+
+<h4 id="esp8266board"><code class="language-plaintext highlighter-rouge">esp8266.board</code></h4>
+<p>The <code class="language-plaintext highlighter-rouge">board</code> field under <code class="language-plaintext highlighter-rouge">esp8266</code> identifies which board you’re using. If you use the linked NodeMCU development boards,
+you do not need to change this field.</p>
+
+<h4 id="otapassword"><code class="language-plaintext highlighter-rouge">ota.password</code></h4>
+<p>The <code class="language-plaintext highlighter-rouge">password</code> field under <code class="language-plaintext highlighter-rouge">ota</code> represents your OTA (over the air) update password for this device. This can be defined
+as a string in the yaml or as a string in your ESPHome secrets.</p>
+
+<h4 id="wifissid-and-wifipassword"><code class="language-plaintext highlighter-rouge">wifi.ssid</code> and <code class="language-plaintext highlighter-rouge">wifi.password</code></h4>
+<p>These represent the network name and password of your wifi network. These values should be stored in secrets as <code class="language-plaintext highlighter-rouge">wifi_ssid</code> and
+<code class="language-plaintext highlighter-rouge">wifi_password</code> respectively.</p>
+
+<h4 id="appassword"><code class="language-plaintext highlighter-rouge">ap.password</code></h4>
+<p>The <code class="language-plaintext highlighter-rouge">password</code> field under <code class="language-plaintext highlighter-rouge">ap</code> represents the ad-hoc network password if your device is unable to connect to your defined wifi
+network. This is currently set to your wifi network password, but can be changed.</p>
+
+<h3 id="sensor">Sensor</h3>
+
+<p>The important bits of the <code class="language-plaintext highlighter-rouge">sensor</code> definition are as follows:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">model</code> - the model of the DHT sensor. If using the linked sensors, leave this as <code class="language-plaintext highlighter-rouge">AM2302</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">pin</code> - which pin the sensor is connected to. Mine is on <code class="language-plaintext highlighter-rouge">D2</code>.</li>
+</ul>
+
+<p>Everything else should be relatively self-explanatory.</p>
+
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
